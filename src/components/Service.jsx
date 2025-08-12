@@ -1,9 +1,10 @@
 import React from 'react'
+import Title from './Title';
 
 const Service = () => {
   return (
     <main className="services" id="services">
-      <h2>our <span className="text-secondary">services</span></h2>
+      <Title title='our' subtitle='services'/>
       <div className="services-content">
         <div className="service-title">
           <i className="fa-solid fa-wallet"></i>
@@ -25,5 +26,15 @@ const Service = () => {
 
   )
 };
+
+// const Service = ({ icon, title, info }) => {
+//   return (
+//     <div className='service-title'>
+//       <i className={icon}></i>
+//       <h3>{title}</h3>
+//       <p>{info}</p>
+//     </div>
+//   );
+// };
 
 export default Service;

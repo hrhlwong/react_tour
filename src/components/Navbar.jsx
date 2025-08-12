@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from "/src/assets/logo.png";
-import PageLink from './PageLink/';
+import PageLinks from './PageLinks/';
 import SocialLink from './SocialLink';
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ return (
         <img src={logo} alt="" className="logo" />
         {/* <!-- desktop menu --> */}
         <div className="main-menu">
-            <PageLink groupName='menu-list' itemName='menu-item' />
+            <PageLinks groupName='menu-list' itemName='menu-item' />
         </div>
         <div className="icon-menu">
             <SocialLink/>
@@ -29,7 +29,7 @@ return (
                 isToggle ? "mobile-menu-items active" : "mobile-menu-items"
                 }
             >
-            <PageLink
+            <PageLinks
                 groupName ='mobile-menu-list'
                 itemName="mobile-menu-list" />
         </div>
